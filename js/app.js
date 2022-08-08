@@ -37,7 +37,7 @@ const ac = document.querySelector(".clear-all");
 const c = document.querySelector(".clear");
 const equalButton = document.querySelector("#equal");
 
-ac.addEventListener("click", () => display.textContent = "");
+ac.addEventListener("click", () => display.textContent = "0");
 c.addEventListener("click", () =>{
     //delete rwo spaces in case of operators
     if(display.textContent.slice(-1) == " ")display.textContent = display.textContent.slice(0, -2);
