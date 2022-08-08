@@ -18,6 +18,9 @@ function modulo(a, b){
     return b == 0 ? alert('Math Error') : a % b;
 }
 
+function power(a, b){
+    return(a == 0 && b == 0 ?alert("Math Error"): a ** b);
+}
 function operate( first,operator, second){
     first = +first;
     second = +second;
@@ -26,6 +29,7 @@ function operate( first,operator, second){
     else if(operator == "-") return subtract(first, second);
     else if(operator == "/") return divide(first, second);
     else if(operator == "%") return modulo(first, second);
+    else if(operator == "^") return power(first, second);
 }
 
 const digits = document.querySelectorAll(".digits");
